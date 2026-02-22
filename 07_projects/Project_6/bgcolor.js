@@ -18,6 +18,7 @@ const changeColor = function(){
 
 const stopChangeColor = function(){
     clearInterval(intervalId);
+    intervalId = null;
 }
 document.querySelector("#start").addEventListener('click', changeColor)
 document.querySelector("#stop").addEventListener('click', stopChangeColor)
